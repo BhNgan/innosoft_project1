@@ -1,0 +1,14 @@
+.news {
+    .number {
+        color: #BBBBBB;
+        font-size: 3.125rem;
+    }
+}
+
+@include media-breakpoint-down (lg) {
+    .news {
+        h5 {
+            font-size: 1rem;
+        }
+    }
+}

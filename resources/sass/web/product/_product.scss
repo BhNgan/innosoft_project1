@@ -1,0 +1,77 @@
+.product {
+    .breadcrumb {
+        padding: 0.75rem 1rem;
+        margin-bottom: 1rem;
+        list-style: none;
+        background-color: unset;
+        border-radius: 0;
+
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: ">";
+        }
+    }
+
+    // .input-group {
+    //     height: 1.9rem;
+    //     width: 8.1rem;
+
+    //     .btn-minus {
+    //         width: 2.5rem;
+    //     }
+
+    //     .btn-plus {
+    //         width: 2.5rem;
+    //     }
+    // }
+
+    .input-group {
+        width: auto;
+
+        .form-control {
+            height: 2.75rem;
+            width: 3.8rem;
+        }
+
+        button {
+            padding: 0.5rem 0rem;
+            height: 2.75rem;
+            width: 3.8rem;
+        }
+    }
+
+    .icon {
+        height: 44px;
+        padding: 0.5rem 0;
+        width: 44px;
+    }
+
+    .carousel-cell {
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    .carousel-main {
+        .carousel-cell {
+            height: 400px;
+            
+            .card-img-top {
+                max-height: 100%;
+                max-width: 100%;
+                width: auto;
+            }
+        }
+    }
+    
+    .carousel-nav {
+        .carousel-cell {
+            height: 100px;
+            width: 100px;
+        
+            .card-img-top {
+                max-height: 100%;
+                max-width: 100%;
+                width: auto;
+            }
+        }
+    }
+}

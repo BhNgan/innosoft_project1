@@ -1,0 +1,48 @@
+.sidebar {
+    height: calc(100vh - 3.5rem);
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 7px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #f1f1f1;
+        border-radius: 9px;
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #777777;
+        border-radius: 9px;
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #444444;
+    }
+
+    .nav-header {
+        color: #fff!important;
+        cursor: default;
+        font-weight: bold;
+        padding: 0.5rem 1rem 0;
+    }
+
+    .nav-link {
+        border-radius: 0;
+        color: #fff;
+        &.active {
+            cursor: default;
+        }
+        @include hover-focus {
+            color: $nav-pills-link-active-color;
+            background-color: $nav-pills-link-active-bg;
+        }
+
+        svg {
+            width: 1rem;
+        }
+    }
+}

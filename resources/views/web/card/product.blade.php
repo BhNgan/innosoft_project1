@@ -1,0 +1,31 @@
+<div class="card card-product bg-dark shadow border-0 rounded-0 h-100 w-100">
+    <a href="{{ $product->type() ? url($product->type()->menuType->menu->alias, [$product->alias]) : '#'}}">
+        <div class="card-product-main h-100">
+            <div class="image d-flex align-items-center justify-content-center w-100 mb-3">
+                <img class="w-100" src="{{ asset($product->avatar)}}">
+            </div>
+            <div class="card-body text-center text-body pt-0">
+                <h5 class="card-title text-white font-weight-bold">{{ $product->product_name }}</h5>
+                <div class="text-center text-white">{{ ($product->note)}}</div>
+                {{-- <div class="font-weight-medium text-danger">{{ number_format($product->bill_price) }} đ</div> --}}
+            </div>
+            {{-- <div class="bg-overlay-2">
+                <div class="p-3 text-white">
+                    {{ ($product->note)}}
+                </div>
+            </div> --}}
+        </div>
+    </a>
+    <div class="row d-flex mt-auto">
+        {{-- <div class="col-12 col-md-6 mb-3 mb-md-0 pr-3 pr-md-0">
+            <a href="{{ $product->type() ? url($product->type()->menuType->menu->alias, [$product->alias]) : '#'}}">
+                <div class="btn btn-primary btn-block font-weight-medium rounded-0 px-0">Chi tiết</div>
+            </a>
+        </div> --}}
+        <div class="col-7 mx-auto pb-3">
+            <div class="btn btn-outline-light btn-block btn-cart font-weight-medium rounded-0 px-0" onclick="add_cart({{ $product->id }})" style="cursor:pointer">
+                <i class="fas fa-shopping-basket"></i> 
+            </div>
+        </div>
+    </div>
+</div>

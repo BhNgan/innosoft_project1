@@ -1,0 +1,171 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import "~toastr/toastr";
+@import '~daterangepicker/daterangepicker';
+@import '~select2/dist/css/select2.min';
+
+@import 'fontweight';
+@import 'sidebar';
+
+html, body {
+    height: 100vh;
+    margin: 0;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+@include media-breakpoint-down(md) {
+    .navbar-collapse.full-height {
+        height: auto;
+    }
+}
+
+.main-content {
+    height: calc(100vh - 3.5rem);
+    overflow: auto;
+
+    .div-content {
+        height: calc(100vh - 10rem);
+        overflow: auto;
+    }
+
+    .table-responsive {
+        tbody {
+            line-height: 2.5;
+        }
+    }
+
+    .pagination {
+        margin-bottom: 0;
+    }
+}
+
+// .card-table {
+//     .card {
+//         flex: 0 0 100%;
+//         max-width: 100%;
+//         .card-img-overlay {
+//             background-color: rgba(0, 0, 0, .4);
+//         }
+//     }
+
+//     @media (min-width: 576px) {
+//         .card {
+//             flex: 0 0 50%;
+//             max-width: calc(50% - 30px);
+//         }
+//     }
+
+//     @media (min-width: 768px) {
+//         .card {
+//             flex: 0 0 33.3333333333%;
+//             max-width: calc(33.3333333333% - 30px);
+//         }
+//     }
+
+//     @media (min-width: 1200px) {
+//         .card {
+//             flex: 0 0 25%;
+//             max-width: calc(25% - 30px);
+//         }
+//     }
+    
+//     @media (min-width: 1900px) {
+//         .card {
+//             flex: 0 0 16.6666666667%;
+//             max-width: calc(16.6666666667% - 30px);
+//         }
+//     }
+// }
+
+.store {
+    .format-discount, .format-discount-total, .format-quantity, .format-price, .fa-pencil-alt {
+        display: none;
+    }
+    
+    .quantity, .price, .discount, .discount-total {
+        display: block;
+    }
+
+    .fa-save {
+        display: inline-block;
+    }
+}
+
+.edit {
+    .format-discount, .format-discount-total, .format-quantity, .format-price {
+        display: block;
+    }
+
+    .fa-pencil-alt {
+        display: inline-block;
+    }
+
+    .quantity, .price, .fa-save, .discount, .discount-total {
+        display: none;
+    }
+}
+
+.update {
+    .format-discount, .format-discount-total, .format-quantity, .format-price, .fa-pencil-alt {
+        display: none;
+    }
+    
+    .quantity, .price, .discount, .discount-total {
+        display: block;
+    }
+
+    .fa-save {
+        display: inline-block;
+    }
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.bg-purple {
+    background-color: #673ab7;
+}
+
+.bg-brown {
+    background-color: #8a6354;
+}
+
+.bg-orange {
+    background-color: #fd7e14;
+}
+
+.bg-cyan {
+    background-color: #68db15;
+}
+
+.icon {
+    font-size: 25px;
+}
+
+.card-dash {
+    box-shadow: 0px 7px 11px 1px rgba(0,0,0,0.65);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+// Orders admin show table
+.borderless-left {
+    border-left: 0px !important;
+}
+
+.borderless-right {
+    border-right: 0px !important;
+}

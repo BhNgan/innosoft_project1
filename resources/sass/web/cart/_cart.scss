@@ -1,0 +1,39 @@
+.cart-section {
+    a:hover {
+        text-decoration: none;
+        color: $dark;
+    }
+
+    .image {
+        height: 90px;
+        width: 90px;
+
+        .card-img-top {
+            max-height: 100%;
+            max-width: 100%;
+            width: auto;
+        }
+    }
+
+    .input-group {
+        height: 1.9rem;
+        width: 8.1rem;
+
+        .btn-minus {
+            width: 2.5rem;
+        }
+
+        .btn-plus {
+            width: 2.5rem;
+        }
+    }
+
+    .btn:focus {
+        box-shadow: none;
+    }
+
+    .btn-primary:active,
+    .btn-primary:focus {
+        box-shadow: none;
+    }
+}

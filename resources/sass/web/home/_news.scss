@@ -1,0 +1,18 @@
+.home-news {
+    .title {
+        position: relative;
+        .main-line {
+            position: relative;
+            width: 140%;
+
+            .line {
+                border-top: 1.5px solid rgba(255, 255, 255, 1);
+                margin-top: 1.2rem;
+            }
+
+            .fa-cut {
+                transform:rotate(180deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+// Body
+$body-bg: #ffffff;
+// $gray-bg: #E5E5E5;
+
+// Typography
+$font-family-sans-serif: 'Montserrat', sans-serif;
+// $font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+// $light: rgb(185, 180, 180) !default;
+// $light: #F5F5F5 !default;
+$dark: #101010 !default;
+$body-color: #1C1C1C !default;
+
+// $gray-600: #707070 !default;
+// $blue: #1150A0;
+$yellow: #ED832E !default;
+$red: #E51C28;
+// $orange:  #ED832E !default;
+$cyan: #253E41;
+
+$text-muted: #707070 !default;
+$light: #F5F5F5 !default;
+
+$navbar-light-hover-color: rgba($yellow, 1) !default;
+$navbar-light-color: rgba(white, 1) !default;
+$navbar-light-active-color: $yellow !default;
+
+$dropdown-link-color: white !default;
+$dropdown-link-hover-color: rgba(#BBBBBB, 1) !default;
+
+// $grid-gutter-width: 15px !default;

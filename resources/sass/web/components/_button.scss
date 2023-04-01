@@ -1,0 +1,15 @@
+// BUTTON SCROLL
+
+#myBtn {
+    bottom: 40px;
+    background-color: #F5F5F5;
+    box-shadow: 8px 13px 33px 10px rgba(0,0,0,0.5);
+    font-size: 1.3rem;
+    padding: 0rem 0.1rem;
+    position: fixed;
+    right: 40px;
+    height: 35px;
+    transition: background-color .3s;
+    width: 35px;
+    z-index: 1000;
+}

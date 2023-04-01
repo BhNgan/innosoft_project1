@@ -1,0 +1,213 @@
+// SECTION NAVBAR
+.navbar {
+    &.bg-white {
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 0.5rem 1rem;
+        background-color: white;
+    
+        .navbar-toggler {
+            background-color: $orange;
+            border: none;
+        }
+    
+        .nav-link {
+            color: #1a1a1a;
+        }
+
+        .nav-item:hover {
+            .nav-link {
+                color: $orange;
+            }
+        }
+    }
+
+    &.navbar-top {
+        background-color: $body-color;
+    }
+
+    .cart-icon {
+        position: relative;
+        padding: 0.3rem 0.5rem;
+        height: 35px;
+        width: 35px;
+
+        &:hover .fa-shopping-basket{
+            color: $yellow !important;
+        }
+
+        .notify-badge {
+            background-color: $yellow;
+            font-size: 0.7rem;
+            position: absolute;
+            right: -0.1rem;
+            text-align: center;
+            top: -0.25rem;
+            height: 20px;
+            width: 20px;
+            z-index: 2;
+        }
+    }
+
+    .search {
+        position: relative;
+        padding: 0.3rem 0.65rem;
+        height: 35px;
+        width: 35px;
+
+        .search-bar {
+            position: absolute;
+            right: 0;
+            top: 3.7rem;
+            z-index: 1;
+            form {
+                position: relative;
+                input {
+                    background-color: $orange;
+                    height: 3rem;
+                    padding: 1rem 3rem 1rem 1rem;
+                    outline: none;
+                    &::placeholder {
+                        color: white;
+                    }
+                }
+
+                .search-close {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 0.5rem;
+                    right: 1rem;
+                    font-size: 1.2rem;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+
+    .logo {
+        max-height: 60px;
+        max-width: 161px;
+    }
+
+    .navbar-toggler {
+        position: relative;
+
+        &.collapsed {
+            .x-close {
+                display: none;
+            }
+
+            .navbar-toggler-icon {
+                display: inline-block;
+            }
+        }
+        
+        .navbar-toggler:active {
+            display: block;
+        }
+
+        .navbar-toggler-icon {
+            display: none;
+        }
+
+        .x-close {
+            display: inline-block;
+        }
+    }
+}
+
+@include media-breakpoint-up (xl) {
+    .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+        color: #1a1a1a;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    
+    .navbar {
+        &.bg-white {
+            .nav-link {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+        }
+
+        .nav-item {
+            &:hover {
+                background-color: $dark;
+                // border-radius: 0.25rem;
+            }
+
+            &.active {
+                background-color: $dark;
+                color: $orange;
+                // padding-top: 25px;
+                // padding-bottom: 25px;
+            }
+        }
+
+        ul {
+            .dropdown:hover .dropdown-menu {
+                background-color: $body-color;
+                border-radius: 0.25rem;
+                display: block;
+                margin-top: 0.6px;
+            }
+        }
+
+        .dropdown-item:hover {
+            background-color: unset;
+            color: $orange;
+        }
+    }
+}
+
+@include media-breakpoint-down (lg) {
+    .navbar {
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 0.5rem 1rem;
+        background-color: $dark;
+        
+        .navbar-toggler {
+            border-radius: 50%;
+            background-color: $orange;
+            color: white;
+            height: 35px;
+            width: 35px;
+            padding: 0rem;
+            font-size: 1.25rem;
+            line-height: 0;
+            
+            .navbar-toggler-icon {
+                width: 1em;
+                padding-left: 2rem;
+                height: 1em;
+            }
+        }
+
+        .nav-item {
+            .nav-link {
+                color: $orange !important;
+            }
+        }
+
+        .dropdown-menu {
+            color: $orange;
+            background-color: transparent;
+            .dropdown-item {
+                color: $orange;
+            }
+        }
+
+        // .logo {
+        //     height: 45px;
+        //     width: 45px;
+        // }
+
+        .search {
+            .search-bar {
+                top: 3.25rem;
+            }
+        }
+    }
+
+    .navbar-dark .navbar-nav .nav-link:focus {
+        color: white;
+    }
+}

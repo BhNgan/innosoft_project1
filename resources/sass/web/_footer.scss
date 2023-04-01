@@ -1,0 +1,20 @@
+.footer {
+    background-color: $dark;
+
+    a {
+        color: white;
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    .logo {
+        height: 81px;
+        width: 220px;
+    }
+
+    hr {
+        background-color: $body-color;
+        margin: 0;
+    }
+}

@@ -1,0 +1,179 @@
+@import 'web/variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import '~flickity/dist/flickity.min.css';
+@import "~toastr/toastr";
+@import '~animate.css/animate';
+@import '~rateyo/min/jquery.rateyo.min.css';
+
+// *SASS File*
+@import 'web/navbar';
+@import 'web/footer';
+@import 'fontweight';
+
+// Components
+@import 'web/components/button';
+@import 'web/components/cards';
+@import 'web/components/pagination';
+@import 'web/components/flickity';
+@import 'web/components/modal';
+
+// Home
+// @import 'web/home/products';
+// @import 'web/home/sponsors';
+@import 'web/home/types';
+@import 'web/home/news';
+@import 'web/home/about';
+// @import 'web/home/benefit';
+
+// Contact
+@import 'web/contact/contact';
+
+// News
+@import 'web/news/news';
+
+// Content
+@import 'web/content/content';
+
+// Cart
+@import 'web/cart/cart';
+
+// Product
+@import 'web/product/product';
+
+// Order
+@import 'web/order/order';
+
+// @font-face{
+//     font-family: 'Montserrat';
+//     src: url(../fonts/Montserrat/Montserrat-Regular.ttf) format('truetype');
+//     font-weight: 400;
+//     font-style: normal;
+// }
+
+// @font-face{
+//     font-family: 'Montserrat';
+//     src: url(../fonts/Montserrat/Montserrat-RegularItalic.ttf) format('truetype');
+//     font-weight: 400;
+//     font-style: italic;
+// }
+
+// @font-face{
+//     font-family: 'Montserrat';
+//     src:url(../fonts/Montserrat/Montserrat-Medium.ttf) format('truetype');
+//     font-weight: 500;
+//     font-style: normal;
+// }
+
+// @font-face{
+//     font-family: 'Montserrat';
+//     src:url(../fonts/Montserrat/Montserrat-Bold.ttf) format('truetype');
+//     font-weight: 600;
+//     font-style: normal;
+// }
+
+// @font-face{
+//     font-family: 'Montserrat';
+//     src:url(../fonts/Montserrat/Montserrat-BoldItalic.ttf) format('truetype');
+//     font-weight: 600;
+//     font-style: italic;
+// }
+
+body {
+    background-color: $body-bg;
+}
+
+.container {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
+
+.bg-center {
+    background-position: center;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-contain {
+    background-size: contain;
+}
+
+.bg-repeat {
+    background-repeat: no-repeat;
+}
+
+.bg-overlay {
+    background-color: rgba(#000000, 0.5);
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    position: relative;
+    height: 31vh;
+}
+
+// .bg-overview {
+//     background-color: #33475B;
+// }
+
+// .overview {
+//     position: relative;
+//     height: 91vh;
+// }
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5rem; //40
+}
+
+h2 {
+    font-size: 1.875rem; //30
+}
+
+h4 {
+    font-size: 1.25rem; //20
+}
+
+h5 {
+    font-size: 1.125rem; //18
+}
+
+.fs-25 {
+    font-size: 1.5625rem;
+}
+
+.fs-15 {
+    font-size: 0.9375rem;
+}
+
+.fs-14 {
+    font-size: 0.875rem;
+}
+
+@include media-breakpoint-only (xs) {
+    h2 {
+        font-size: 1.25rem;
+    }
+}
+
+// small {
+//     font-size: 0.9375rem; //15
+// }
+
+//     font-size: 1.5625rem; //25
+//     font-size: 1.25rem; //20
+//     font-size: 0.875rem; //14
+//     font-size: 0.8125rem; //13

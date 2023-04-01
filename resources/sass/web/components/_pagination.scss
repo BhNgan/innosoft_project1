@@ -1,0 +1,22 @@
+.pagination {
+    .page-item {
+        // height: 35px;
+        // width: 43px;
+        .page-link {
+            border-radius: 0;
+            color: #202020;
+            padding: 0.4rem 0.9rem;
+        }
+        
+        &.active {
+            .page-link {
+                color: white;
+            }
+        }
+    }
+
+    .arrow {
+        // width: 30px !important;
+        color: #B2B2B2;
+    }
+}
